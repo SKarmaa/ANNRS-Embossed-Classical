@@ -290,10 +290,9 @@ def process_video_source(source, api_url, roi, secondary_roi, source_type, max_f
 roi_coordinates = (0, 50, 1920, 1080)  
 secondary_roi_coordinates = (0, 270, 1920, 400)  
 
-api_url = 'https://nawadurgaparking.com/api/vehicles/number-plates'
-rtsp_url = 'rtsp://admin:123456@192.168.11.69:554/media/video1'
-#rtsp_url = 'C:\\Users\\Shopnil\\Desktop\\test\\00_11_20240207_143500.avi'
-#rtsp_url = 'C:\\Users\\Shopnil\\Desktop\\test\\00_11_20240207_134600.avi'
+api_url = 'YOUR_API_URL'
+rtsp_url = 'YOUR_RSTP_URL'
+#rtsp_url = 'YOUR_VIDEO_FOLDER'
 
-process_video_source(rtsp_url, api_url, roi_coordinates, secondary_roi_coordinates, source_type='stream')
-#process_video_source(rtsp_url, api_url, roi_coordinates, secondary_roi_coordinates, source_type='video')
+process_video_source(rtsp_url, api_url, roi_coordinates, secondary_roi_coordinates, source_type='stream') # For live feed 
+#process_video_source(rtsp_url, api_url, roi_coordinates, secondary_roi_coordinates, source_type='video') # For video source
